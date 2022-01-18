@@ -6,15 +6,10 @@
   "lint-staged": {
     "*": "prettier --write"
   },
-  "husky": {
-    "hooks": {
-      "pre-commit": "lint-staged"
-    }
-  },
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
     "dev": "nodemon server.js",
-    "pret": "lint-staged"
+    "husky-prepare": "husky install",
+    "lint": "lint-staged"
   },
   "author": "",
   "license": "ISC",
