@@ -4,7 +4,12 @@
   "description": "",
   "main": "index.js",
   "lint-staged": {
-    "*": "prettier --write server.js \"src\""
+    "*": "prettier --write"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "npm run pret"
+    }
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
