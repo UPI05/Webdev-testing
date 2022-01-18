@@ -1,0 +1,27 @@
+{
+  "name": "be",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "lint-staged": {
+    "*": "npm run pret"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "nodemon server.js",
+    "pret": "prettier --write server.js \"src\""
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "eslint": "^8.7.0",
+    "morgan": "^1.10.0",
+    "nodemon": "^2.0.15",
+    "prettier": "^2.5.1"
+  },
+  "dependencies": {
+    "bcrypt": "^5.0.1",
+    "express": "^4.17.2",
+    "path": "^0.12.7"
+  }
+}
