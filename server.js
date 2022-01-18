@@ -51,7 +51,7 @@ app.use(
   }
 );
 
-    app.use((req, res) => {
+app.use((req, res) => {
   res.status(404).sendFile(path.join(__dirname, "/package.json"));
 });
 

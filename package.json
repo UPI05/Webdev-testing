@@ -4,12 +4,12 @@
   "description": "",
   "main": "index.js",
   "lint-staged": {
-    "*": "npm run pret"
+    "*": "prettier --write server.js \"src\""
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "dev": "nodemon server.js",
-    "pret": "prettier --write server.js \"src\""
+    "pret": "lint-staged"
   },
   "author": "",
   "license": "ISC",
