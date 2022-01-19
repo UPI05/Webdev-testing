@@ -4,12 +4,13 @@
   "description": "",
   "main": "index.js",
   "lint-staged": {
-    "*": "prettier --write"
+    "*.{js}": "prettier --config .prettierrc.json --write"
   },
   "scripts": {
     "dev": "nodemon server.js",
     "husky-prepare": "husky install",
-    "lint": "lint-staged"
+    "lint": "prettier --config .prettierrc.json server.js \"src/**/*.js\" --write",
+    "test": "prettier --config .prettierrc.json server.js \"src/**/*.js\" --check"
   },
   "author": "",
   "license": "ISC",
